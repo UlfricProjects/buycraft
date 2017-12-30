@@ -1,12 +1,11 @@
 package com.ulfric.buycraft.model;
 
 import java.util.List;
-import java.util.UUID;
 
 public class Cart {
 
 	private List<Item> items;
-	private UUID purchaser;
+	private String username;
 
 	public List<Item> getItems() {
 		return items;
@@ -16,12 +15,12 @@ public class Cart {
 		this.items = items;
 	}
 
-	public UUID getPurchaser() {
-		return purchaser;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setPurchaser(UUID purchaser) {
-		this.purchaser = purchaser;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 }
