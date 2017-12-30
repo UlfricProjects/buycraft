@@ -1,6 +1,6 @@
 package com.ulfric.buycraft.sco.model;
 
-public enum StandardCheckoutChargeError {
+public enum StandardCheckoutError {
 
 	INTERNAL_ERROR,
 	MISSING_BUYCRAFT_TOKEN,
