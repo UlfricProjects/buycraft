@@ -1,5 +1,6 @@
 package com.ulfric.buycraft.sco.model;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 import com.ulfric.buycraft.model.Cart;
@@ -8,6 +9,7 @@ public class StandardCheckoutChargeRequest extends StandardCheckoutRequest {
 
 	private UUID purchaser;
 	private Cart cart;
+	private BigDecimal price;
 	private String itemName;
 
 	public UUID getPurchaser() {
@@ -32,6 +34,14 @@ public class StandardCheckoutChargeRequest extends StandardCheckoutRequest {
 
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
 
 }
