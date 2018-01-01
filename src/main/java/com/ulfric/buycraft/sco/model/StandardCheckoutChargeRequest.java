@@ -11,6 +11,7 @@ public class StandardCheckoutChargeRequest extends StandardCheckoutRequest {
 	private Cart cart;
 	private BigDecimal price;
 	private String itemName;
+	private String referrer;
 
 	public UUID getPurchaser() {
 		return purchaser;
@@ -42,6 +43,14 @@ public class StandardCheckoutChargeRequest extends StandardCheckoutRequest {
 
 	public void setPrice(BigDecimal price) {
 		this.price = price;
+	}
+
+	public String getReferrer() {
+		return referrer;
+	}
+
+	public void setReferrer(String referrer) {
+		this.referrer = referrer;
 	}
 
 }
