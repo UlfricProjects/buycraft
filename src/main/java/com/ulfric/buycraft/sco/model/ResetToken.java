@@ -1,11 +1,9 @@
 package com.ulfric.buycraft.sco.model;
 
-import java.time.Instant;
-
 public class ResetToken {
 
 	private String code;
-	private Instant created;
+	private Long timestamp;
 
 	public String getCode() {
 		return code;
@@ -15,12 +13,12 @@ public class ResetToken {
 		this.code = code;
 	}
 
-	public Instant getCreated() {
-		return created;
+	public Long getTimestamp() {
+		return timestamp;
 	}
 
-	public void setCreated(Instant created) {
-		this.created = created;
+	public void setTimestamp(Long timestamp) {
+		this.timestamp = timestamp;
 	}
 
 }
