@@ -2,23 +2,14 @@ package com.ulfric.buycraft.sco.model;
 
 public class StandardCheckoutChargeResponse extends StandardCheckoutResponse {
 
-	private boolean state = false;
-	private Boolean requiresAuthorization;
+	private StandardCheckoutChargeState state;
 
-	public boolean getState() {
+	public StandardCheckoutChargeState getState() {
 		return state;
 	}
 
-	public void setState(boolean state) {
+	public void setState(StandardCheckoutChargeState state) {
 		this.state = state;
-	}
-
-	public Boolean getRequiresAuthorization() {
-		return requiresAuthorization;
-	}
-
-	public void setRequiresAuthorization(Boolean requiresAuthorization) {
-		this.requiresAuthorization = requiresAuthorization;
 	}
 
 }
